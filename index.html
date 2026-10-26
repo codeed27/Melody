@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Melody | Your Music Space</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        
+        <aside class="sidebar">
+            <h2 class="logo">♫ Melody</h2>
+
+            <p class="menu-title">YOUR SPACE</p>
+
+            <button class="nav-btn active" data-view="home">
+                🏠 Home
+            </button>
+
+            <button class="nav-btn" data-view="library">
+                🎵 My Library
+            </button>
+
+            <button class="nav-btn" data-view="favorites">
+                ❤️ Favorites
+            </button>
+        </aside>
+
+        
+        <main class="main">
+
+            <header>
+                <p class="subtitle">YOUR PERSONAL MUSIC SPACE</p>
+                <h1>Good music, good mood.</h1>
+                <p class="description">
+                    Collect your favorite songs in one place. ♡
+                </p>
+            </header>
+
+            
+            <section class="hero">
+                <div>
+                    <p>YOUR SOUNDTRACK 🎧</p>
+                    <h2>Music for your moments.</h2>
+                    <p>Every song tells a story.</p>
+                </div>
+            </section>
+
+           
+            <section class="add-section" id="add-section">
+
+                <h2>＋ Add a Song</h2>
+
+                <input
+                    type="text"
+                    id="song-name"
+                    placeholder="Song name (optional)"
+                >
+
+                <input
+                    type="url"
+                    id="song-link"
+                    placeholder="Paste Spotify or YouTube link"
+                >
+
+                <button id="add-song">Add to Library ♡</button>
+
+                <p id="message" aria-live="polite"></p>
+
+            </section>
+
+            
+            <section class="library-section">
+
+                <div class="section-heading">
+                    <h2 id="list-title">Your Collection</h2>
+                    <span id="song-count">0 songs</span>
+                </div>
+
+                <div id="song-list" class="song-list">
+                    <p class="empty">
+                        🎧 Your library is waiting for its first song!
+                    </p>
+                </div>
+
+            </section>
+
+        
+            <section id="player" class="player hidden">
+
+                <h2>Now Playing 🎶</h2>
+
+                <p id="playing-name"></p>
+
+                <div id="player-content"></div>
+
+                <button id="close-player" class="secondary-btn">
+                    Close Player
+                </button>
+
+            </section>
+
+            <footer>
+                Made with ♡ for music lovers
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #12101b;
+    color: #f5efff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    min-height: 90vh;
+    background-color: #191624;
+    border: 1px solid #352b45;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+
+.sidebar {
+    background-color: #201a2d;
+    padding: 25px 15px;
+    border-right: 1px solid #352b45;
+}
+
+.logo {
+    color: #c9a6ff;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.menu-title {
+    font-size: 11px;
+    color: #a99ab9;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 8px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #d8cce7;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    background-color: #3b2b50;
+    color: white;
+}
+
+
+
+.main {
+    padding: 30px;
+    min-width: 0;
+}
+
+.subtitle {
+    color: #c4a1ff;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.description {
+    color: #a99fb7;
+    font-size: 14px;
+}
+
+
+
+.hero {
+    margin: 25px 0;
+    padding: 30px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #563a78, #30233f);
+    border-radius: 15px;
+}
+
+.hero p {
+    color: #e1d3f2;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+.add-section {
+    padding: 20px;
+    background-color: #211c2e;
+    border: 1px solid #392e49;
+    border-radius: 12px;
+}
+
+.add-section h2,
+.section-heading h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.add-section input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #4b3d5d;
+    border-radius: 8px;
+    background-color: #171421;
+    color: white;
+    font-size: 14px;
+}
+
+.add-section input:focus {
+    outline: 2px solid #b895ef;
+}
+
+button {
+    font-family: inherit;
+}
+
+#add-song {
+    padding: 12px 18px;
+    background-color: #bd9ae9;
+    color: #21162d;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-song:hover {
+    background-color: #d1b6f5;
+}
+
+#message {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #cbb8e7;
+    overflow-wrap: anywhere;
+}
+
+
+
+.library-section {
+    margin-top: 30px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#song-count {
+    color: #a99ab9;
+    font-size: 12px;
+}
+
+.song-list {
+    display: grid;
+    gap: 12px;
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background-color: #211c2e;
+    border: 1px solid #392e49;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.song-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #704c91, #30243f);
+    border-radius: 9px;
+    font-size: 22px;
+}
+
+.song-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.song-info h3 {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.song-info p {
+    font-size: 11px;
+    color: #a99ab9;
+    margin-top: 6px;
+}
+
+.song-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.song-actions button {
+    padding: 8px;
+    border: 1px solid #4b3d5d;
+    background-color: #332940;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.song-actions button:hover {
+    background-color: #59416f;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px 10px;
+    color: #a99ab9;
+    border: 1px dashed #4b3d5d;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+
+.player {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #211c2e;
+    border: 1px solid #392e49;
+    border-radius: 12px;
+}
+
+.player h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+#playing-name {
+    font-size: 13px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+#player-content iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.secondary-btn {
+    margin-top: 12px;
+    padding: 10px 15px;
+    background-color: #3b2b50;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #a99ab9;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 700px) {
+    body {
+        padding: 8px;
+    }
+
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #352b45;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .menu-title {
+        display: none;
+    }
+
+    .nav-btn {
+        width: auto;
+        margin-right: 5px;
+        padding: 10px;
+    }
+
+    .main {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 22px;
+        min-height: 150px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .song-card {
+        flex-wrap: wrap;
+    }
+
+    .song-info {
+        flex-basis: calc(100% - 65px);
+    }
+}
+
